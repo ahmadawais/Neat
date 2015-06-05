@@ -3,8 +3,8 @@
     "version"        : "1.0.0",
     "repository"     : {
                         "type": "git",
-                        "url" : "https://github.com/ahmadawais/neat-Advanced-WordPress-Base-Theme"
-    }
+                        "url" : "https://github.com/ahmadawais/neat"
+    },
     "dependencies"   : {},
     "devDependencies": {
 
