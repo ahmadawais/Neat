@@ -1,0 +1,37 @@
+/*!
+ *
+ * Theme Name: Neat
+ * Description: Neat WordPress Theme
+ * Theme URI: http://AhmadAwais.com
+ *
+ * Version: 1.0.0
+ *
+ * Author: AhmadAwais
+ * Author URI: http://AhmadAwais.com
+ *
+ * Tags: neat, WordPress, theme
+ *
+ * License: GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+
+/* ----------------------------------------------------------------------------
+ * Mixins & Variables
+ * ------------------------------------------------------------------------- */
+@import "partials/mixins";
+@import "partials/variables";
+
+/* ----------------------------------------------------------------------------
+ * Normalize & Santize
+ * ------------------------------------------------------------------------- */
+@import "vendor/normalize";
+@import "vendor/sanitize";
+
+/* ----------------------------------------------------------------------------
+ * Structure
+ * ------------------------------------------------------------------------- */
+@import "partials/structure";
+
+/* WPCore */
+@import "partials/wpcore";

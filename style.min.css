@@ -1,0 +1,175 @@
+/*!
+    Theme Name: Neat
+    Description: Neat WordPress Theme
+    Version: 1.0.0
+    Theme URI: http://AhmadAwais.com
+    Author: AhmadAwais
+    Author URI: http://AhmadAwais.com
+    Tags: neat, wordpress, theme
+    License: GPLv2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*//*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}video{display:block}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}
+a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}
+dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}
+button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}
+textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}*,*:after,*:before{box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html{font-size:62.5%;height:100%;min-height:100%}body{font:400 11px/1.4 "Ubuntu","sans-serif";color:#292929;margin:0;background:#fff !important;height:100%;min-height:100%}
+.clear:before,.clear:after{content:' ';display:table}.clear:after{clear:both}
+.clear{*zoom:1}img{max-width:100%;vertical-align:bottom;height:auto}a{color:#444;text-decoration:none}
+a:hover{color:#444}a:focus{outline:0}a:hover,a:active{outline:0}input:focus{outline:0;border:1px solid #292929}
+select{width:100%}.aa_wrapper{max-width:100%;width:100%;margin:0 auto;position:relative;display:block;overflow:hidden;min-height:100%}
+.aa_pagination{display:block;width:100%;padding:10px;padding:1rem}.aa_510{padding:5rem 10rem !important}
+.aa_10{padding:10rem}.aa_heading{display:block;width:100%;padding:1rem 0;text-align:center;font:400 3rem/1 "Roboto Slab","sans-serif";text-transform:uppercase}
+.aa_underline{height:1px;display:block;width:5%;text-align:center;margin:0 auto;position:relative}
+.aa_blk_dsc{display:block;width:100%;font:300 1.8rem/1.3 "Ubuntu","sans-serif";text-align:center;margin:2rem 0}
+.aa_txtnone{color:transparent;-webkit-transition:all .6s ease-in;transition:all .6s ease-in}
+span.post-date{display:block;font:100 1.2rem/1.5 "Roboto Slab","sans-serif";text-transform:uppercase}
+.widget_search{display:table;width:100%}.widget_search .aa_search_input{width:100%;padding:2rem 3rem;font:100 1.5rem/1 "Ubuntu","sans-serif";border:1px solid #dedede;box-sizing:border-box;border-radius:.25rem}
+.widget_search .aa_search_submit{width:100%;margin:1rem 0;text-align:center;padding:2rem 3rem;border:0;background:#686868;color:#dedede;font:700 2rem/1 "Ubuntu","sans-serif";text-transform:uppercase;border-radius:.25rem}
+.widget_search .aa_search_submit:hover{background:#3f3f3f;-webkit-transition:.5s all;transition:.5s all}
+.widget_search .aa_search_submit:active,.widget_search .aa_search_submit:focus,.widget_search .aa_search_submit:visited{border:0;text-decoration:none;position:relative}
+#aa_sidebar{display:inline-block;width:100%;vertical-align:top;border:1px dashed #dedede;padding:5rem;max-width:51rem;overflow:hidden;margin:0 auto}
+#aa_sidebar ul li{padding:1rem}#aa_sidebar ul li a{padding:.5rem}#aa_sidebar ul li a:hover{opacity:.8;-webkit-transition:all .6s ease;transition:all .6s ease}
+#aa_sidebar .edd_empty_cart,.aa_footer .edd_empty_cart{background:0;padding:2rem}
+#aa_sidebar div div,.aa_footer div div{margin:2rem 0}#aa_sidebar h3,.aa_footer h3{font:700 2.5rem/1 "Roboto Slab","sans-serif";margin:1rem 0}
+#aa_sidebar ul,.aa_footer ul{display:block;width:100%;font:300 1.9rem/2 "Ubuntu","sans-serif";list-style:none;margin:0;padding:0}
+#aa_sidebar ul li,.aa_footer ul li{margin:1rem 0;padding:1rem 2rem;cursor:pointer;max-width:51rem;overflow:hidden;background:#f8f8f8}
+#aa_sidebar ul li:hover,.aa_footer ul li:hover{opacity:.8;background:#dedede;-webkit-transition:.6s all;transition:.6s all}
+.aa_404_sec{text-align:center}.aa_404_h1{font:700 10rem/1 "Roboto Slab","sans-serif";color:#292929}
+::-moz-selection{background:#000;color:#fff;text-shadow:none}::selection{background:#000;color:#fff;text-shadow:none}
+::-webkit-selection{background:#000;color:#fff;text-shadow:none}::-moz-selection{background:#000;color:#fff;text-shadow:none}
+.aa_h1{background:#292929;color:#dedede;margin:0}.aa_h1 span{padding:1rem;background:rgba(18,18,18,0.21);border-radius:.25rem}
+.aa_search_input{color:#686868 !important}.vendor{display:table-row}.alignnone{margin:5px 20px 20px 0}
+.aligncenter,div.aligncenter{display:block;margin:5px auto 5px auto}.alignright{float:right;margin:5px 0 20px 20px}
+.alignleft{float:left;margin:5px 20px 20px 0}a img.alignright{float:right;margin:5px 0 20px 20px}
+a img.alignnone{margin:5px 20px 20px 0}a img.alignleft{float:left;margin:5px 20px 20px 0}
+a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{background:#c5c5c5;max-width:100%;padding:2rem;text-align:center}
+.wp-caption.alignnone{margin:5px 20px 20px 0}.wp-caption.alignleft{margin:5px 20px 20px 0}
+.wp-caption.alignright{margin:5px 0 20px 20px}.wp-caption img{border:0 none;height:auto;margin:0;max-width:100%;padding:0;width:auto}
+.wp-caption .wp-caption-text,.gallery-caption{margin:0;padding:.5rem}.textwidget img{margin:1rem 0}
+.bypostauthor{background:inherit}.widget_calendar{display:table;width:100%}#wp-calendar{width:100%}
+#wp-calendar caption{text-align:right;color:#000;font-size:12px;margin-top:10px;margin-bottom:15px}
+#wp-calendar thead{font-size:10px}#wp-calendar thead th{padding-bottom:10px}#wp-calendar tbody{color:#000;font-family:"Roboto Slab","sans-serif";font-weight:300}
+#wp-calendar tbody td{background:#fff;border:1px solid #fff;text-align:center;padding:8px}
+#wp-calendar tbody td:hover{background:#fff}#wp-calendar tbody .pad{background:0}
+#wp-calendar tfoot #next{font-size:10px;text-transform:uppercase;text-align:right}
+#wp-calendar tfoot #prev{font-size:10px;text-transform:uppercase;padding-top:10px}
+.size-auto,.size-full,.size-large,.size-medium,.size-thumbnail{max-width:100%;height:auto}
+@media(min-width:240px){.aa_510{padding:1rem 1rem !important}.aa_10{padding:1rem 1rem !important}
+.aa_heading{font:400 2rem/1 "Roboto Slab","sans-serif"}
+.aa_blk_dsc{font:300 1.5rem/1.3 "Ubuntu","sans-serif"}
+#aa_sidebar h3,.comment-reply-title,.aa_comments_title,.aa_pingbacks_title{font:400 2.3rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar .aa_search_submit{font:400 2rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar,#aa_sidebar ul,#aa_sidebar .aa_search_input{font:300 1.4rem/1.8rem "Ubuntu","sans-serif"}
+.aa_h1{font:400 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_480nBelow{display:block}.aa_768nBelow{display:block}.aa_generic_headings{font:400 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_generic_txt{font:300 1.4rem/1.8rem "Ubuntu","sans-serif"}
+.aa_gen_responsive h1,.aa_blk_dsc h1{font:400 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h2,.aa_blk_dsc h2{font:400 2rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h3,.aa_blk_dsc h3{font:400 1.9rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h4,.aa_gen_responsive h5,.aa_gen_responsive h6,.aa_blk_dsc h4,.aa_blk_dsc h5,.aa_blk_dsc h6{font:400 1.7rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive,.aa_gen_responsive pre,.aa_gen_responsive ul,.aa_gen_responsive ol,.aa_blk_dsc,.aa_blk_dsc pre,.aa_blk_dsc ul,.aa_blk_dsc ol{font:300 1.4rem/1.8rem "Ubuntu","sans-serif"}
+.aa_gen_responsive blockquote,.aa_blk_dsc blockquote{font:100 1.4rem/1.8rem "Roboto Slab","sans-serif"}
+.aa_gen_responsive ul,.aa_blk_dsc ul{padding:0 0 0 1rem;margin:0}.aa_gen_responsive ol,.aa_blk_dsc ol{padding:0 0 0 3rem;margin:0}
+.wp-caption .wp-caption-text,.gallery-caption{font:300 1.4rem/1.8rem "Ubuntu","sans-serif"}
+}@media(min-width:320px){.aa_510{padding:1rem 1rem !important}.aa_10{padding:1rem 1rem !important}
+.aa_heading{font:400 2.3rem/1 "Roboto Slab","sans-serif"}
+.aa_blk_dsc{font:300 1.5rem/1.3 "Ubuntu","sans-serif"}
+#aa_sidebar h3,.comment-reply-title,.aa_comments_title,.aa_pingbacks_title{font:700 2.3rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar .aa_search_submit{font:400 2rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar,#aa_sidebar ul,#aa_sidebar .aa_search_input{font:300 1.55rem/1.8 "Ubuntu","sans-serif"}
+.aa_h1{font:700 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_480nBelow{display:block}.aa_768nBelow{display:block}.aa_generic_headings{font:700 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_generic_txt{font:300 1.55rem/1.8 "Ubuntu","sans-serif"}
+.aa_gen_responsive h1,.aa_blk_dsc h1{font:700 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h2,.aa_blk_dsc h2{font:700 2.1rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h3,.aa_blk_dsc h3{font:700 2rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h4,.aa_gen_responsive h5,.aa_gen_responsive h6,.aa_blk_dsc h4,.aa_blk_dsc h5,.aa_blk_dsc h6{font:700 1.8rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive,.aa_gen_responsive pre,.aa_gen_responsive ul,.aa_gen_responsive ol,.aa_blk_dsc,.aa_blk_dsc pre,.aa_blk_dsc ul,.aa_blk_dsc ol{font:300 1.55rem/1.8 "Ubuntu","sans-serif"}
+.aa_gen_responsive blockquote,.aa_blk_dsc blockquote{font:100 1.55rem/1.8 "Roboto Slab","sans-serif"}
+.aa_gen_responsive ul,.aa_blk_dsc ul{padding:0 0 0 1rem;margin:0}.aa_gen_responsive ol,.aa_blk_dsc ol{padding:0 0 0 3rem;margin:0}
+.wp-caption .wp-caption-text,.gallery-caption{font:300 1.55rem/1.8 "Ubuntu","sans-serif"}
+}@media(min-width:480px){.aa_510{padding:3rem 3rem !important}.aa_10{padding:3rem 3rem !important}
+.aa_heading{font:400 2.5rem/1 "Roboto Slab","sans-serif"}
+.aa_blk_dsc{font:300 1.8rem/1.3 "Ubuntu","sans-serif"}
+#aa_sidebar h3,.comment-reply-title,.aa_comments_title,.aa_pingbacks_title{font:700 2.5rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar .aa_search_submit{font:400 2rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar,#aa_sidebar ul,#aa_sidebar .aa_search_input{font:300 1.8rem/1.8 "Ubuntu","sans-serif"}
+.aa_h1{font:700 2.5rem/1.5 "Roboto Slab","sans-serif"}
+.aa_480nBelow{display:block}.aa_768nBelow{display:block}.aa_generic_headings{font:700 2.5rem/1.5 "Roboto Slab","sans-serif"}
+.aa_generic_txt{font:300 1.8rem/1.8 "Ubuntu","sans-serif"}
+.aa_gen_responsive h1,.aa_blk_dsc h1{font:700 2.5rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h2,.aa_blk_dsc h2{font:700 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h3,.aa_blk_dsc h3{font:700 2.1rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h4,.aa_gen_responsive h5,.aa_gen_responsive h6,.aa_blk_dsc h4,.aa_blk_dsc h5,.aa_blk_dsc h6{font:700 1.9rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive,.aa_gen_responsive pre,.aa_gen_responsive ul,.aa_gen_responsive ol,.aa_blk_dsc,.aa_blk_dsc pre,.aa_blk_dsc ul,.aa_blk_dsc ol{font:300 1.8rem/1.8 "Ubuntu","sans-serif"}
+.aa_gen_responsive blockquote,.aa_blk_dsc blockquote{font:100 1.8rem/1.8 "Roboto Slab","sans-serif"}
+.aa_gen_responsive ul,.aa_blk_dsc ul{padding:0 0 0 1rem;margin:0}.aa_gen_responsive ol,.aa_blk_dsc ol{padding:0 0 0 3rem;margin:0}
+.wp-caption .wp-caption-text,.gallery-caption{font:300 1.8rem/1.8 "Ubuntu","sans-serif"}
+}@media(min-width:768px){.aa_510{padding:3rem 5rem !important}.aa_10{padding:5rem 5rem !important}
+.aa_heading{font:100 3.5rem/1 "Roboto Slab","sans-serif"}
+.aa_blk_dsc{font:300 1.8rem/1.3 "Ubuntu","sans-serif"}
+#aa_sidebar h3,.comment-reply-title,.aa_comments_title,.aa_pingbacks_title{font:700 2.8rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar .aa_search_submit{font:400 2rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar,#aa_sidebar ul,#aa_sidebar .aa_search_input{font:300 1.9rem/1.7 "Ubuntu","sans-serif"}
+.aa_h1{font:700 2.8rem/1.5 "Roboto Slab","sans-serif"}
+.aa_480nBelow{display:none}.aa_768nBelow{display:block}.aa_generic_headings{font:700 2.8rem/1.5 "Roboto Slab","sans-serif"}
+.aa_generic_txt{font:300 1.9rem/1.7 "Ubuntu","sans-serif"}
+.aa_gen_responsive h1,.aa_blk_dsc h1{font:700 2.8rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h2,.aa_blk_dsc h2{font:700 2.4rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h3,.aa_blk_dsc h3{font:700 2.2rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h4,.aa_gen_responsive h5,.aa_gen_responsive h6,.aa_blk_dsc h4,.aa_blk_dsc h5,.aa_blk_dsc h6{font:700 2rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive,.aa_gen_responsive pre,.aa_gen_responsive ul,.aa_gen_responsive ol,.aa_blk_dsc,.aa_blk_dsc pre,.aa_blk_dsc ul,.aa_blk_dsc ol{font:300 1.9rem/1.7 "Ubuntu","sans-serif"}
+.aa_gen_responsive blockquote,.aa_blk_dsc blockquote{font:100 1.9rem/1.7 "Roboto Slab","sans-serif"}
+.aa_gen_responsive ul,.aa_blk_dsc ul{padding:0 0 0 5rem;margin:0}.aa_gen_responsive ol,.aa_blk_dsc ol{padding:0 0 0 7rem;margin:0}
+.wp-caption .wp-caption-text,.gallery-caption{font:300 1.9rem/1.7 "Ubuntu","sans-serif"}
+}@media(min-width:1024px){.aa_510{padding:3rem 5rem !important}.aa_10{padding:5rem 5rem !important}
+.aa_heading{font:100 4rem/1 "Roboto Slab","sans-serif"}
+.aa_blk_dsc{font:300 1.8rem/1.3 "Ubuntu","sans-serif"}
+#aa_sidebar h3,.comment-reply-title,.aa_comments_title,.aa_pingbacks_title{font:700 3rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar .aa_search_submit{font:400 2rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar,#aa_sidebar ul,#aa_sidebar .aa_search_input{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+.aa_h1{font:700 3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_480nBelow{display:none}.aa_768nBelow{display:none}.aa_generic_headings{font:700 3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_generic_txt{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+.aa_gen_responsive h1,.aa_blk_dsc h1{font:700 3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h2,.aa_blk_dsc h2{font:700 2.5rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h3,.aa_blk_dsc h3{font:700 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h4,.aa_gen_responsive h5,.aa_gen_responsive h6,.aa_blk_dsc h4,.aa_blk_dsc h5,.aa_blk_dsc h6{font:700 2.1rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive,.aa_gen_responsive pre,.aa_gen_responsive ul,.aa_gen_responsive ol,.aa_blk_dsc,.aa_blk_dsc pre,.aa_blk_dsc ul,.aa_blk_dsc ol{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+.aa_gen_responsive blockquote,.aa_blk_dsc blockquote{font:100 2rem/3.1rem "Roboto Slab","sans-serif"}
+.aa_gen_responsive ul,.aa_blk_dsc ul{padding:0 0 0 5rem;margin:0}.aa_gen_responsive ol,.aa_blk_dsc ol{padding:0 0 0 7rem;margin:0}
+.wp-caption .wp-caption-text,.gallery-caption{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+}@media(min-width:1280px){.aa_510{padding:5rem 10rem !important}.aa_10{padding:10rem 10rem !important}
+.aa_heading{font:100 5rem/1 "Roboto Slab","sans-serif"}
+.aa_blk_dsc{font:300 1.8rem/1.3 "Ubuntu","sans-serif"}
+#aa_sidebar h3,.comment-reply-title,.aa_comments_title,.aa_pingbacks_title{font:700 3rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar .aa_search_submit{font:400 2rem/1.5 "Roboto Slab","sans-serif"}
+#aa_sidebar,#aa_sidebar ul,#aa_sidebar .aa_search_input{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+.aa_h1{font:700 3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_480nBelow{display:none}.aa_768nBelow{display:none}.aa_generic_headings{font:700 3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_generic_txt{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+.aa_gen_responsive h1,.aa_blk_dsc h1{font:700 5rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h2,.aa_blk_dsc h2{font:700 2.5rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h3,.aa_blk_dsc h3{font:700 2.3rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive h4,.aa_gen_responsive h5,.aa_gen_responsive h6,.aa_blk_dsc h4,.aa_blk_dsc h5,.aa_blk_dsc h6{font:700 2.1rem/1.5 "Roboto Slab","sans-serif"}
+.aa_gen_responsive,.aa_gen_responsive pre,.aa_gen_responsive ul,.aa_gen_responsive ol,.aa_blk_dsc,.aa_blk_dsc pre,.aa_blk_dsc ul,.aa_blk_dsc ol{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+.aa_gen_responsive blockquote,.aa_blk_dsc blockquote{font:100 2rem/3.1rem "Roboto Slab","sans-serif"}
+.aa_gen_responsive ul,.aa_blk_dsc ul{padding:0 0 0 5rem;margin:0}.aa_gen_responsive ol,.aa_blk_dsc ol{padding:0 0 0 7rem;margin:0}
+.wp-caption .wp-caption-text,.gallery-caption{font:300 2rem/3.1rem "Ubuntu","sans-serif"}
+}
