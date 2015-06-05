@@ -92,7 +92,7 @@ a img.aligncenter {
 #wp-calendar caption { text-align: right; color: $b; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
 #wp-calendar thead { font-size: 10px; }
 #wp-calendar thead th { padding-bottom: 10px; }
-#wp-calendar tbody { color: $b; font-family: $f2_lit; font-weight: 300;}
+#wp-calendar tbody { color: $b; font-family: sans-serif; font-weight: 300;}
 #wp-calendar tbody td { background: $w; border: 1px solid $w; text-align: center; padding:8px;}
 #wp-calendar tbody td:hover { background: $w; }
 #wp-calendar tbody .pad { background: none; }
@@ -117,11 +117,11 @@ a img.aligncenter {
 .wp-caption .wp-caption-text,
 .gallery-caption{
 
-     @include r(240)  { font: 300 1.4rem/1.8rem $f1_lit; }
-     @include r(320)  { font: 300 1.55rem/1.8 $f1_lit;   }
-     @include r(480)  { font: 300 1.8rem/1.8 $f1_lit;    }
-     @include r(768)  { font: 300 1.9rem/1.7 $f1_lit;    }
-     @include r(1024) { font: 300 2rem/3.1rem $f1_lit;   }
-     @include r(1280) { font: 300 2rem/3.1rem $f1_lit;   }
+     @include r(240)  { font: 300 1.4rem/1.8rem sans-serif; }
+     @include r(320)  { font: 300 1.55rem/1.8 sans-serif;   }
+     @include r(480)  { font: 300 1.8rem/1.8 sans-serif;    }
+     @include r(768)  { font: 300 1.9rem/1.7 sans-serif;    }
+     @include r(1024) { font: 300 2rem/3.1rem sans-serif;   }
+     @include r(1280) { font: 300 2rem/3.1rem sans-serif;   }
 
  }

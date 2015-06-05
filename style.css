@@ -1,29 +1,16 @@
-/*!
-    Theme Name: Neat
-    Description: Neat WordPress Theme
-    Version: 1.0.0
-    Theme URI: http://AhmadAwais.com
-    Author: AhmadAwais
-    Author URI: http://AhmadAwais.com
-    Tags: neat, wordpress, theme
-    License: GPLv2 or later
-    License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-*/
+/*! Theme Name: Neat Description: Neat WordPress Theme Theme URI: http://AhmadAwais.com Version: 1.0.0 Author: AhmadAwais Author URI: http://AhmadAwais.com Tags: neat, WordPress, theme License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html */
+/* ---------------------------------------------------------------------------- Mixins & Variables ------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- Mixins ------------------------------------------------------------------------- */
 /* Mixin for clearfix @include clearfix; */
 /* @font-face mixin Bulletproof font-face via Font Squirrel @include fontface('family', 'assets/fonts/', 'myfontname'); */
-/* IMAGE RETINA */
+/** IMAGE RETINA @include image-2x(/img/image.png, 100%, auto); */
 /* ---------------------------------------------------------------------------- Responsive Usage @include r(240)  { } @include r(320)  { } @include r(480)  { } @include r(768)  { } @include r(1024) { } @include r(1280) { } ------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- Variables @package PP ------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- Fonts // @include fontface('FONT_NAME', 'assets/fonts/', 'FONT_FAMILY'); ------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- Ubuntu Family ------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- Roboto Slab Family ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- Variables ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- Fonts $f1_lit : "Ubuntu", "sans-serif"; //300 ------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- Colors ------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- Responsive ------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- Responsive Usage @include r(240)  { } @include r(320)  { } @include r(480)  { } @include r(768)  { } @include r(1024) { } @include r(1280) { } ------------------------------------------------------------------------- */
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+/* ---------------------------------------------------------------------------- Normalize & Santize ------------------------------------------------------------------------- */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. */
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /** Remove default margin. */
@@ -31,24 +18,22 @@ body { margin: 0; }
 
 /* HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /** 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
 audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
 
-video { display: block; }
-
 /** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
 audio:not([controls]) { display: none; height: 0; }
 
-/** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
+/** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22. */
 [hidden], template { display: none; }
 
 /* Links ========================================================================== */
 /** Remove the gray background color from active links in IE 10. */
-a { background: transparent; }
+a { background-color: transparent; }
 
-/** Improve readability when focused and also mouse hovered in all browsers. */
+/** Improve readability of focused elements when they are also in an active/hover state. */
 a:active, a:hover { outline: 0; }
 
 /* Text-level semantics ========================================================================== */
@@ -126,8 +111,8 @@ input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ pa
 /** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
 
-/** 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof). */
-input[type="search"] { -webkit-appearance: textfield; /* 1 */ /* 2 */ box-sizing: content-box; }
+/** 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome. */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ box-sizing: content-box; /* 2 */ }
 
 /** Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
@@ -150,6 +135,86 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+/* Normalization */
+:root { -ms-overflow-style: -ms-autohiding-scrollbar; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+audio:not([controls]) { display: none; }
+
+details { display: block; }
+
+input[type="number"] { width: auto; }
+
+input[type="search"] { -webkit-appearance: textfield; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+main { display: block; }
+
+summary { display: block; }
+
+pre { overflow: auto; }
+
+progress { display: inline-block; }
+
+small { font-size: 75%; }
+
+template { display: none; }
+
+textarea { overflow: auto; }
+
+[hidden] { display: none; }
+
+[unselectable] { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* Universal inheritance */
+*, ::before, ::after { box-sizing: inherit; }
+
+* { font-size: inherit; line-height: inherit; }
+
+::before, ::after { text-decoration: inherit; vertical-align: inherit; }
+
+/* Opinionated defaults */
+*, ::before, ::after { border-style: solid; border-width: 0; }
+
+* { margin: 0; padding: 0; }
+
+:root { box-sizing: border-box; cursor: default; font: 16px/1.5 sans-serif; text-rendering: optimizeLegibility; }
+
+html { background-color: #FFFFFF; }
+
+a { text-decoration: none; }
+
+audio, canvas, iframe, img, svg, video { vertical-align: middle; }
+
+button, input, select, textarea { background-color: transparent; }
+
+button, input, select, textarea { color: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; }
+
+button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="reset"], [type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], select, textarea { min-height: 1.5em; }
+
+code, kbd, pre, samp { font-family: monospace, monospace; }
+
+nav ol, nav ul { list-style: none; }
+
+select { -moz-appearance: none; -webkit-appearance: none; }
+
+select::-ms-expand { display: none; }
+
+select::-ms-value { color: currentColor; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+textarea { resize: vertical; }
+
+::-moz-selection { background-color: #B3D4FC; text-shadow: none; }
+
+::selection { background-color: #B3D4FC; text-shadow: none; }
+
+@media screen { [hidden~="screen"] { display: inherit; }
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) { clip: rect(0 0 0 0) !important; position: absolute !important; } }
+
+/* ---------------------------------------------------------------------------- Structure ------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- Structure ------------------------------------------------------------------------- */
 /* global box-sizing */
 *, *:after, *:before { box-sizing: border-box; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; text-rendering: optimizeLegibility; }
@@ -157,7 +222,7 @@ td, th { padding: 0; }
 /* html element 62.5% font-size for REM use */
 html { font-size: 62.5%; height: 100%; min-height: 100%; }
 
-body { font: 400 11px/1.4 "Ubuntu", "sans-serif"; color: #292929; margin: 0; background: #ffffff !important; height: 100%; min-height: 100%; }
+body { font: 400 11px/1.4 sans-serif; color: #292929; margin: 0; background: #ffffff !important; height: 100%; min-height: 100%; }
 
 /* clear */
 .clear:before, .clear:after { content: ' '; display: table; }
@@ -180,332 +245,7 @@ input:focus { outline: 0; border: 1px solid #292929; }
 
 select { width: 100%; }
 
-/* ---------------------------------------------------------------------------- Wrapper ------------------------------------------------------------------------- */
-/* wrapper */
-.aa_wrapper { max-width: 100%; width: 100%; margin: 0 auto; position: relative; display: block; overflow: hidden; min-height: 100%; }
-
-/* ---------------------------------------------------------------------------- Pagination ------------------------------------------------------------------------- */
-.aa_pagination { display: block; width: 100%; padding: 10px; padding: 1rem; }
-
-/* ---------------------------------------------------------------------------- Generic ------------------------------------------------------------------------- */
-.aa_510 { padding: 5rem 10rem !important; }
-
-.aa_10 { padding: 10rem; }
-
-.aa_heading { display: block; width: 100%; padding: 1rem 0; text-align: center; font: 400 3rem/1 "Roboto Slab", "sans-serif"; text-transform: uppercase; }
-
-.aa_underline { height: 1px; display: block; width: 5%; text-align: center; margin: 0 auto; position: relative; }
-
-.aa_blk_dsc { display: block; width: 100%; font: 300 1.8rem/1.3 "Ubuntu", "sans-serif"; text-align: center; margin: 2rem 0; }
-
-.aa_txtnone { color: transparent; -webkit-transition: all 0.6s ease-in; transition: all 0.6s ease-in; }
-
-/* ---------------------------------------------------------------------------- Generic Widgets ------------------------------------------------------------------------- */
-span.post-date { display: block; font: 100 1.2rem/1.5 "Roboto Slab", "sans-serif"; text-transform: uppercase; }
-
-/* ---------------------------------------------------------------------------- Search widget ------------------------------------------------------------------------- */
-.widget_search { display: table; width: 100%; }
-
-.widget_search .aa_search_input { width: 100%; padding: 2rem 3rem; font: 100 1.5rem/1 "Ubuntu", "sans-serif"; border: 1px solid #dedede; box-sizing: border-box; border-radius: 0.25rem; }
-
-.widget_search .aa_search_submit { width: 100%; margin: 1rem 0; text-align: center; padding: 2rem 3rem; border: none; background: #686868; color: #dedede; font: 700 2rem/1 "Ubuntu", "sans-serif"; text-transform: uppercase; border-radius: 0.25rem; }
-
-.widget_search .aa_search_submit:hover { background: #3F3F3F; -webkit-transition: 0.5s all; transition: 0.5s all; }
-
-.widget_search .aa_search_submit:active, .widget_search .aa_search_submit:focus, .widget_search .aa_search_submit:visited { border: none; text-decoration: none; position: relative; }
-
-/* -------------------------------------------------------------------------------- #aa_sidebar and .aa_single_inner_wrap are in a display:table where #aa_sidebar is inline-block so that it doesn't cover all the 100% height and free up the space. If it had been table-cell aa_single_inner_wrap it would have covered 100% height, which was not desireable. ----------------------------------------------------------------------------- */
-#aa_sidebar { display: inline-block; width: 100%; vertical-align: top; border: 1px dashed #dedede; padding: 5rem; max-width: 51rem; overflow: hidden; margin: 0 auto; }
-
-#aa_sidebar ul li { padding: 1rem; }
-
-#aa_sidebar ul li a { padding: 0.5rem; }
-
-#aa_sidebar ul li a:hover { opacity: 0.8; -webkit-transition: all 0.6s ease; transition: all 0.6s ease; }
-
-#aa_sidebar .edd_empty_cart, .aa_footer .edd_empty_cart { background: none; padding: 2rem; }
-
-/* ---------------------------------------------------------------------------- Recent posts, meta, comments and all ul/li based widgets ------------------------------------------------------------------------- */
-#aa_sidebar div div, .aa_footer div div { margin: 2rem 0; }
-
-#aa_sidebar h3, .aa_footer h3 { font: 700 2.5rem/1 "Roboto Slab", "sans-serif"; margin: 1rem 0; }
-
-#aa_sidebar ul, .aa_footer ul { display: block; width: 100%; font: 300 1.9rem/2 "Ubuntu", "sans-serif"; list-style: none; margin: 0; padding: 0; }
-
-#aa_sidebar ul li, .aa_footer ul li { margin: 1rem 0; padding: 1rem 2rem; cursor: pointer; max-width: 51rem; overflow: hidden; background: #f8f8f8; }
-
-#aa_sidebar ul li:hover, .aa_footer ul li:hover { opacity: 0.8; background: #dedede; -webkit-transition: 0.6s all; transition: 0.6s all; }
-
-/* ---------------------------------------------------------------------------- 404 ------------------------------------------------------------------------- */
-.aa_404_sec { text-align: center; }
-
-.aa_404_h1 { font: 700 10rem/1 "Roboto Slab", "sans-serif"; color: #292929; }
-
-/* ---------------------------------------------------------------------------- MISC ------------------------------------------------------------------------- */
-::-moz-selection { background: #000000; color: #ffffff; text-shadow: none; }
-::selection { background: #000000; color: #ffffff; text-shadow: none; }
-
-::-webkit-selection { background: #000000; color: #ffffff; text-shadow: none; }
-
-::-moz-selection { background: #000000; color: #ffffff; text-shadow: none; }
-
-/* ---------------------------------------------------------------------------- Responsive Structure ------------------------------------------------------------------------- */
-@media (min-width: 240px) { .aa_510 { padding: 1rem 1rem !important; } }
-
-@media (min-width: 320px) { .aa_510 { padding: 1rem 1rem !important; } }
-
-@media (min-width: 480px) { .aa_510 { padding: 3rem 3rem !important; } }
-
-@media (min-width: 768px) { .aa_510 { padding: 3rem 5rem !important; } }
-
-@media (min-width: 1024px) { .aa_510 { padding: 3rem 5rem !important; } }
-
-@media (min-width: 1280px) { .aa_510 { padding: 5rem 10rem !important; } }
-
-@media (min-width: 240px) { .aa_10 { padding: 1rem 1rem !important; } }
-
-@media (min-width: 320px) { .aa_10 { padding: 1rem 1rem !important; } }
-
-@media (min-width: 480px) { .aa_10 { padding: 3rem 3rem !important; } }
-
-@media (min-width: 768px) { .aa_10 { padding: 5rem 5rem !important; } }
-
-@media (min-width: 1024px) { .aa_10 { padding: 5rem 5rem !important; } }
-
-@media (min-width: 1280px) { .aa_10 { padding: 10rem 10rem !important; } }
-
-@media (min-width: 240px) { .aa_heading { font: 400 2rem/1 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_heading { font: 400 2.3rem/1 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_heading { font: 400 2.5rem/1 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_heading { font: 100 3.5rem/1 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_heading { font: 100 4rem/1 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_heading { font: 100 5rem/1 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_blk_dsc { font: 300 1.5rem/1.3 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_blk_dsc { font: 300 1.5rem/1.3 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_blk_dsc { font: 300 1.8rem/1.3 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_blk_dsc { font: 300 1.8rem/1.3 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_blk_dsc { font: 300 1.8rem/1.3 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_blk_dsc { font: 300 1.8rem/1.3 "Ubuntu", "sans-serif"; } }
-
-/* ---------------------------------------------------------------------------- Headings ------------------------------------------------------------------------- */
-@media (min-width: 240px) { #aa_sidebar h3, .comment-reply-title, .aa_comments_title, .aa_pingbacks_title { font: 400 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { #aa_sidebar h3, .comment-reply-title, .aa_comments_title, .aa_pingbacks_title { font: 700 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { #aa_sidebar h3, .comment-reply-title, .aa_comments_title, .aa_pingbacks_title { font: 700 2.5rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { #aa_sidebar h3, .comment-reply-title, .aa_comments_title, .aa_pingbacks_title { font: 700 2.8rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { #aa_sidebar h3, .comment-reply-title, .aa_comments_title, .aa_pingbacks_title { font: 700 3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { #aa_sidebar h3, .comment-reply-title, .aa_comments_title, .aa_pingbacks_title { font: 700 3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { #aa_sidebar .aa_search_submit { font: 400 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { #aa_sidebar .aa_search_submit { font: 400 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { #aa_sidebar .aa_search_submit { font: 400 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { #aa_sidebar .aa_search_submit { font: 400 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { #aa_sidebar .aa_search_submit { font: 400 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { #aa_sidebar .aa_search_submit { font: 400 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-/* ---------------------------------------------------------------------------- Texts ------------------------------------------------------------------------- */
-@media (min-width: 240px) { #aa_sidebar, #aa_sidebar ul, #aa_sidebar .aa_search_input { font: 300 1.4rem/1.8rem "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 320px) { #aa_sidebar, #aa_sidebar ul, #aa_sidebar .aa_search_input { font: 300 1.55rem/1.8 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 480px) { #aa_sidebar, #aa_sidebar ul, #aa_sidebar .aa_search_input { font: 300 1.8rem/1.8 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 768px) { #aa_sidebar, #aa_sidebar ul, #aa_sidebar .aa_search_input { font: 300 1.9rem/1.7 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1024px) { #aa_sidebar, #aa_sidebar ul, #aa_sidebar .aa_search_input { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1280px) { #aa_sidebar, #aa_sidebar ul, #aa_sidebar .aa_search_input { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
-
-/* ---------------------------------------------------------------------------- Generic headings for archive, tag, category and author pages ------------------------------------------------------------------------- */
-.aa_h1 { background: #292929; color: #dedede; margin: 0; }
-
-@media (min-width: 240px) { .aa_h1 { font: 400 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_h1 { font: 700 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_h1 { font: 700 2.5rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_h1 { font: 700 2.8rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_h1 { font: 700 3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_h1 { font: 700 3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-.aa_h1 span { padding: 1rem; background: rgba(18, 18, 18, 0.21); border-radius: 0.25rem; }
-
-/* ---------------------------------------------------------------------------- Search input ------------------------------------------------------------------------- */
-.aa_search_input { color: #686868 !important; }
-
-/* ---------------------------------------------------------------------------- Generic bps ------------------------------------------------------------------------- */
-@media (min-width: 240px) { .aa_480nBelow { display: block; } }
-
-@media (min-width: 320px) { .aa_480nBelow { display: block; } }
-
-@media (min-width: 480px) { .aa_480nBelow { display: block; } }
-
-@media (min-width: 768px) { .aa_480nBelow { display: none; } }
-
-@media (min-width: 1024px) { .aa_480nBelow { display: none; } }
-
-@media (min-width: 1280px) { .aa_480nBelow { display: none; } }
-
-@media (min-width: 240px) { .aa_768nBelow { display: block; } }
-
-@media (min-width: 320px) { .aa_768nBelow { display: block; } }
-
-@media (min-width: 480px) { .aa_768nBelow { display: block; } }
-
-@media (min-width: 768px) { .aa_768nBelow { display: block; } }
-
-@media (min-width: 1024px) { .aa_768nBelow { display: none; } }
-
-@media (min-width: 1280px) { .aa_768nBelow { display: none; } }
-
-@media (min-width: 240px) { .aa_generic_headings { font: 400 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_generic_headings { font: 700 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_generic_headings { font: 700 2.5rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_generic_headings { font: 700 2.8rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_generic_headings { font: 700 3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_generic_headings { font: 700 3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_generic_txt { font: 300 1.4rem/1.8rem "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_generic_txt { font: 300 1.55rem/1.8 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_generic_txt { font: 300 1.8rem/1.8 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_generic_txt { font: 300 1.9rem/1.7 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_generic_txt { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_generic_txt { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
-
-/* ---------------------------------------------------------------------------- Generic Layout responsive stuff ------------------------------------------------------------------------- */
-@media (min-width: 240px) { .aa_gen_responsive h1, .aa_blk_dsc h1 { font: 400 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_gen_responsive h1, .aa_blk_dsc h1 { font: 700 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_gen_responsive h1, .aa_blk_dsc h1 { font: 700 2.5rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_gen_responsive h1, .aa_blk_dsc h1 { font: 700 2.8rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive h1, .aa_blk_dsc h1 { font: 700 3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive h1, .aa_blk_dsc h1 { font: 700 5rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_gen_responsive h2, .aa_blk_dsc h2 { font: 400 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_gen_responsive h2, .aa_blk_dsc h2 { font: 700 2.1rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_gen_responsive h2, .aa_blk_dsc h2 { font: 700 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_gen_responsive h2, .aa_blk_dsc h2 { font: 700 2.4rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive h2, .aa_blk_dsc h2 { font: 700 2.5rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive h2, .aa_blk_dsc h2 { font: 700 2.5rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_gen_responsive h3, .aa_blk_dsc h3 { font: 400 1.9rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_gen_responsive h3, .aa_blk_dsc h3 { font: 700 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_gen_responsive h3, .aa_blk_dsc h3 { font: 700 2.1rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_gen_responsive h3, .aa_blk_dsc h3 { font: 700 2.2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive h3, .aa_blk_dsc h3 { font: 700 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive h3, .aa_blk_dsc h3 { font: 700 2.3rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_gen_responsive h4, .aa_gen_responsive h5, .aa_gen_responsive h6, .aa_blk_dsc h4, .aa_blk_dsc h5, .aa_blk_dsc h6 { font: 400 1.7rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_gen_responsive h4, .aa_gen_responsive h5, .aa_gen_responsive h6, .aa_blk_dsc h4, .aa_blk_dsc h5, .aa_blk_dsc h6 { font: 700 1.8rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_gen_responsive h4, .aa_gen_responsive h5, .aa_gen_responsive h6, .aa_blk_dsc h4, .aa_blk_dsc h5, .aa_blk_dsc h6 { font: 700 1.9rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_gen_responsive h4, .aa_gen_responsive h5, .aa_gen_responsive h6, .aa_blk_dsc h4, .aa_blk_dsc h5, .aa_blk_dsc h6 { font: 700 2rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive h4, .aa_gen_responsive h5, .aa_gen_responsive h6, .aa_blk_dsc h4, .aa_blk_dsc h5, .aa_blk_dsc h6 { font: 700 2.1rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive h4, .aa_gen_responsive h5, .aa_gen_responsive h6, .aa_blk_dsc h4, .aa_blk_dsc h5, .aa_blk_dsc h6 { font: 700 2.1rem/1.5 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_gen_responsive, .aa_gen_responsive pre, .aa_gen_responsive ul, .aa_gen_responsive ol, .aa_blk_dsc, .aa_blk_dsc pre, .aa_blk_dsc ul, .aa_blk_dsc ol { font: 300 1.4rem/1.8rem "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_gen_responsive, .aa_gen_responsive pre, .aa_gen_responsive ul, .aa_gen_responsive ol, .aa_blk_dsc, .aa_blk_dsc pre, .aa_blk_dsc ul, .aa_blk_dsc ol { font: 300 1.55rem/1.8 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_gen_responsive, .aa_gen_responsive pre, .aa_gen_responsive ul, .aa_gen_responsive ol, .aa_blk_dsc, .aa_blk_dsc pre, .aa_blk_dsc ul, .aa_blk_dsc ol { font: 300 1.8rem/1.8 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_gen_responsive, .aa_gen_responsive pre, .aa_gen_responsive ul, .aa_gen_responsive ol, .aa_blk_dsc, .aa_blk_dsc pre, .aa_blk_dsc ul, .aa_blk_dsc ol { font: 300 1.9rem/1.7 "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive, .aa_gen_responsive pre, .aa_gen_responsive ul, .aa_gen_responsive ol, .aa_blk_dsc, .aa_blk_dsc pre, .aa_blk_dsc ul, .aa_blk_dsc ol { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive, .aa_gen_responsive pre, .aa_gen_responsive ul, .aa_gen_responsive ol, .aa_blk_dsc, .aa_blk_dsc pre, .aa_blk_dsc ul, .aa_blk_dsc ol { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_gen_responsive blockquote, .aa_blk_dsc blockquote { font: 100 1.4rem/1.8rem "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 320px) { .aa_gen_responsive blockquote, .aa_blk_dsc blockquote { font: 100 1.55rem/1.8 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 480px) { .aa_gen_responsive blockquote, .aa_blk_dsc blockquote { font: 100 1.8rem/1.8 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 768px) { .aa_gen_responsive blockquote, .aa_blk_dsc blockquote { font: 100 1.9rem/1.7 "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive blockquote, .aa_blk_dsc blockquote { font: 100 2rem/3.1rem "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive blockquote, .aa_blk_dsc blockquote { font: 100 2rem/3.1rem "Roboto Slab", "sans-serif"; } }
-
-@media (min-width: 240px) { .aa_gen_responsive ul, .aa_blk_dsc ul { padding: 0 0 0 1rem; margin: 0; } }
-
-@media (min-width: 320px) { .aa_gen_responsive ul, .aa_blk_dsc ul { padding: 0 0 0 1rem; margin: 0; } }
-
-@media (min-width: 480px) { .aa_gen_responsive ul, .aa_blk_dsc ul { padding: 0 0 0 1rem; margin: 0; } }
-
-@media (min-width: 768px) { .aa_gen_responsive ul, .aa_blk_dsc ul { padding: 0 0 0 5rem; margin: 0; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive ul, .aa_blk_dsc ul { padding: 0 0 0 5rem; margin: 0; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive ul, .aa_blk_dsc ul { padding: 0 0 0 5rem; margin: 0; } }
-
-@media (min-width: 240px) { .aa_gen_responsive ol, .aa_blk_dsc ol { padding: 0 0 0 3rem; margin: 0; } }
-
-@media (min-width: 320px) { .aa_gen_responsive ol, .aa_blk_dsc ol { padding: 0 0 0 3rem; margin: 0; } }
-
-@media (min-width: 480px) { .aa_gen_responsive ol, .aa_blk_dsc ol { padding: 0 0 0 3rem; margin: 0; } }
-
-@media (min-width: 768px) { .aa_gen_responsive ol, .aa_blk_dsc ol { padding: 0 0 0 7rem; margin: 0; } }
-
-@media (min-width: 1024px) { .aa_gen_responsive ol, .aa_blk_dsc ol { padding: 0 0 0 7rem; margin: 0; } }
-
-@media (min-width: 1280px) { .aa_gen_responsive ol, .aa_blk_dsc ol { padding: 0 0 0 7rem; margin: 0; } }
-
-/* CSS Vendors*/
-/** Vendor.scss */
-.vendor { display: table-row; }
-
+/* WPCore */
 /*------------------------------------*    WORDPRESS CORE
 \*------------------------------------*/
 .alignnone { margin: 5px 20px 20px 0; }
@@ -551,7 +291,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 #wp-calendar thead th { padding-bottom: 10px; }
 
-#wp-calendar tbody { color: #000000; font-family: "Roboto Slab", "sans-serif"; font-weight: 300; }
+#wp-calendar tbody { color: #000000; font-family: sans-serif; font-weight: 300; }
 
 #wp-calendar tbody td { background: #ffffff; border: 1px solid #ffffff; text-align: center; padding: 8px; }
 
@@ -567,16 +307,16 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .size-auto, .size-full, .size-large, .size-medium, .size-thumbnail { max-width: 100%; height: auto; }
 
 /* ---------------------------------------------------------------------------- Responsive ------------------------------------------------------------------------- */
-@media (min-width: 240px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.4rem/1.8rem "Ubuntu", "sans-serif"; } }
+@media (min-width: 240px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.4rem/1.8rem sans-serif; } }
 
-@media (min-width: 320px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.55rem/1.8 "Ubuntu", "sans-serif"; } }
+@media (min-width: 320px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.55rem/1.8 sans-serif; } }
 
-@media (min-width: 480px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.8rem/1.8 "Ubuntu", "sans-serif"; } }
+@media (min-width: 480px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.8rem/1.8 sans-serif; } }
 
-@media (min-width: 768px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.9rem/1.7 "Ubuntu", "sans-serif"; } }
+@media (min-width: 768px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 1.9rem/1.7 sans-serif; } }
 
-@media (min-width: 1024px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
+@media (min-width: 1024px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 2rem/3.1rem sans-serif; } }
 
-@media (min-width: 1280px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 2rem/3.1rem "Ubuntu", "sans-serif"; } }
+@media (min-width: 1280px) { .wp-caption .wp-caption-text, .gallery-caption { font: 300 2rem/3.1rem sans-serif; } }
 
 /*# sourceMappingURL=style.css.map */
