@@ -26,10 +26,19 @@ if ( file_exists( get_template_directory() .'/assets/admin/titanframework/titan-
  * http://www.titanframework.net/get-started/
  *
  */
-if ( file_exists( get_template_directory() .'/assets/admin/titanframework/options-init.php') ) {
-    require_once( get_template_directory() .'/assets/admin/titanframework/options-init.php' );
+
+// Admin panel options
+if ( file_exists( get_template_directory() .'/assets/admin/titanframework/adminpanel-options-init.php') ) {
+    require_once( get_template_directory() .'/assets/admin/titanframework/adminpanel-options-init.php' );
 }
 
+// Metabox options
+if ( file_exists( get_template_directory() .'/assets/admin/titanframework/metabox-options-init.php') ) {
+    require_once( get_template_directory() .'/assets/admin/titanframework/metabox-options-init.php' );
+}
 
-
+// Customizer options
+if ( file_exists( get_template_directory() .'/assets/admin/titanframework/customizer-options-init.php') ) {
+    require_once( get_template_directory() .'/assets/admin/titanframework/customizer-options-init.php' );
+}
 
