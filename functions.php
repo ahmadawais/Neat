@@ -9,13 +9,22 @@
  *
  * Paths
  *
- * @since  1.0
- *
  */
 if ( !defined( 'AA_THEME_DIR' ) ){
     define('AA_THEME_DIR', ABSPATH . 'wp-content/themes/' . get_template());
 }
 
+
+/**
+ *
+ * Include admin-init.php
+ *
+ * File responsible for all admin relevant activity E.g. Settings & Metaboxes etc
+ *
+ */
+if ( file_exists( get_template_directory() .'/assets/admin/admin-init.php') ) {
+    require_once( get_template_directory() .'/assets/admin/admin-init.php' );
+}
 
 
 
