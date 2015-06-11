@@ -3,6 +3,34 @@ Neat
 
 Neat is a starter theme built by Ahmad Awais [http://AhmadAwais.com/about/]
 
+
+Branch: TitanFramework
+------
+
+This branch uses Titan Framework [http://www.titanframework.net/] basic configurations.
+
+
+** What's New **
+- `functions.php` includes `admin-init.php` at  the top [Line 18-27]
+- `admin-init.php` in `assets/admin/` folder is responsible for all admin relevant code
+- `admin-init.php` includes four files which are defined below
+- `titan-framework-checker.php` is included in `admin-init.php` present insdie `/assets/admin/titanframework/`; It adds Titan Framework as a plugin
+
+** Create and Set Opiotns **
+- `adminpanel-options-init.php` is included in `admin-init.php` present insdie `/assets/admin/titanframework/`; It creates Admin panel options
+- `metabox-options-init.php` is included in `admin-init.php` present insdie `/assets/admin/titanframework/`; It creates metabox options
+- `customizer-options-init.php` is included in `admin-init.php` present insdie `/assets/admin/titanframework/`; It creates customizer options
+
+** Get option values **
+- Go to Add New Page and add a page with Template called `Titan Framework` which is explained below
+- `aa_titanframework.php` is a custom page template where we get values and output them for `admin panels` and `metboxes`
+- `header.php` is where we have added `customizer` relevant options in the `style` tag
+
+
+
+Neat Theme Stuff
+================
+
 Features
 --------
 
@@ -17,7 +45,7 @@ Getting and Installing the Theme
 --------
 
 
-1. Grab a copy of this theme or Clone this theme, E.g. go to the themes folder then run ` git clone https://github.com/ahmadawais/neat-Advanced-WordPress-Base-Theme`
+1. Grab a copy of this theme or Clone this theme, E.g. go to the themes folder then run ` git clone https://github.com/ahmadawais/neat.git`
 
 2. You need Node.js & Sass installed if you haven't installed it, go ahead and install it first. Once you have Node, Sass and the theme installed, the next step is simple enough.
 
