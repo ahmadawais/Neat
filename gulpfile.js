@@ -34,28 +34,28 @@ var project 	= 'neat', // Project name, used for build zip.
 	// assets 		= './assets/', 	// Your main project assets and naming 'source' instead of 'src' to avoid confusion with gulp.src
 
 // Load plugins
-var gulp 			= require('gulp'),
-	browserSync		= require('browser-sync'), // Asynchronous browser loading on .scss file changes
-	reload			= browserSync.reload,
-	autoprefixer 	= require('gulp-autoprefixer'), // Autoprefixing magic
-	minifycss 		= require('gulp-uglifycss'),
-	filter 			= require('gulp-filter'),
-	uglify 			= require('gulp-uglify'),
-	imagemin 		= require('gulp-imagemin'),
-	newer 			= require('gulp-newer'),
-	rename 			= require('gulp-rename'),
-	concat 			= require('gulp-concat'),
-	notify 			= require('gulp-notify'),
-	cmq 			= require('gulp-combine-media-queries'),
-	runSequence 	= require('gulp-run-sequence'),
-	sass 			= require('gulp-sass'),
-	plugins 		= require('gulp-load-plugins')({ camelize: true }),
-	ignore 			= require('gulp-ignore'), // Helps with ignoring files and directories in our run tasks
-	rimraf 			= require('gulp-rimraf'), // Helps with removing files and directories in our run tasks
-	zip 			= require('gulp-zip'), // Using to zip up our packaged theme into a tasty zip file that can be installed in WordPress!
-	plumber 		= require('gulp-plumber'), // Helps prevent stream crashing on errors
-	cache 			= require('gulp-cache'),
-	sourcemaps		= require('gulp-sourcemaps');
+	var gulp     = require('gulp'),
+		browserSync  = require('browser-sync'), // Asynchronous browser loading on .scss file changes
+		reload       = browserSync.reload,
+		autoprefixer = require('gulp-autoprefixer'), // Autoprefixing magic
+		minifycss    = require('gulp-uglifycss'),
+		filter       = require('gulp-filter'),
+		uglify       = require('gulp-uglify'),
+		imagemin     = require('gulp-imagemin'),
+		newer        = require('gulp-newer'),
+		rename       = require('gulp-rename'),
+		concat       = require('gulp-concat'),
+		notify       = require('gulp-notify'),
+		cmq          = require('gulp-combine-media-queries'),
+		runSequence  = require('gulp-run-sequence'),
+		sass         = require('gulp-sass'),
+		plugins      = require('gulp-load-plugins')({ camelize: true }),
+		ignore       = require('gulp-ignore'), // Helps with ignoring files and directories in our run tasks
+		rimraf       = require('gulp-rimraf'), // Helps with removing files and directories in our run tasks
+		zip          = require('gulp-zip'), // Using to zip up our packaged theme into a tasty zip file that can be installed in WordPress!
+		plumber      = require('gulp-plumber'), // Helps prevent stream crashing on errors
+		cache        = require('gulp-cache'),
+		sourcemaps   = require('gulp-sourcemaps'),
 
 
 /**
@@ -119,7 +119,6 @@ gulp.task('styles', function () {
  *
  * Look at src/js and concatenate those files, send them to assets/js where we then minimize the concatenated file.
 */
-
 gulp.task('vendorsJs', function() {
 	return 	gulp.src(['./assets/js/vendor/*.js', bower+'**/*.js'])
 				.pipe(concat('vendors.js'))
