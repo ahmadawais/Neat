@@ -81,7 +81,7 @@ function aa_options_creating_function() {
      *
      * Create second admin panel options page called $aa_panel2
      *
-     * This is a first admin panel and is called by its name i.e. $aa_panel
+     * This is a second admin panel and is called by its name i.e. $aa_panel2
      */
     $aa_panel2 = $titan->createAdminPanel( array(
 
