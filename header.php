@@ -67,7 +67,7 @@ $aa_sec_body_txt_clr_val = $titan->getOption( 'aa_sec_body_txt_clr' );
 	<header class="aa_navigation">
 
 		<nav class="aa_nav">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 		<!-- /.aa_nav -->
 

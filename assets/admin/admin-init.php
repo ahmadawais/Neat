@@ -42,3 +42,12 @@ if ( file_exists( get_template_directory() .'/assets/admin/titanframework/custom
     require_once( get_template_directory() .'/assets/admin/titanframework/customizer-options-init.php' );
 }
 
+/**
+ *
+ * More Options from TF
+ */
+// Date options
+if ( file_exists( get_template_directory() .'/assets/admin/titanframework/date-option.php') ) {
+    require_once( get_template_directory() .'/assets/admin/titanframework/date-option.php' );
+}
+
