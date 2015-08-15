@@ -46,7 +46,7 @@ function aa_function_date_option() {
         'id'      => 'aa_date_option',
         'type'    => 'date',
         'desc'    => 'Choose a date',
-        'date'    => TRUE,
+        'date'    => FALSE,
         'time'    => TRUE,
         'default' => '2015-08-20',
 
