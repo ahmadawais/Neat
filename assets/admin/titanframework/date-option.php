@@ -16,18 +16,12 @@
  * tf_create_options is the hook used to create options
  *
  */
-add_action( 'tf_create_options', 'aa_date_option' );
+add_action( 'tf_create_options', 'aa_function_date_option' );
 
-function aa_date_option() {
+function aa_function_date_option() {
 
     // Initialize Titan with your theme name
     $titan = TitanFramework::getInstance( 'neat' );
-
-
-
-    //////////////////////
-    //First Admin panel //
-    //////////////////////
 
     /**
      *
