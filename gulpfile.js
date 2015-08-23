@@ -61,7 +61,7 @@ var project 		= 'neat', // Project name, used for build zip.
 		zip          = require('gulp-zip'), // Using to zip up our packaged theme into a tasty zip file that can be installed in WordPress!
 		plumber      = require('gulp-plumber'), // Helps prevent stream crashing on errors
 		cache        = require('gulp-cache'),
-		sourcemaps   = require('gulp-sourcemaps'),
+		sourcemaps   = require('gulp-sourcemaps');
 
 
 /**
@@ -73,24 +73,27 @@ var project 		= 'neat', // Project name, used for build zip.
 gulp.task('browser-sync', function() {
 	var files = [
 					'**/*.php',
-					'**/*.{png,jpg,gif,svg}'
+					'**/*.{png,jpg,gif}'
 				];
 	browserSync.init(files, {
-				// Read here http://www.browsersync.io/docs/options/
-				proxy: url,
 
-				// port: 8080,
+		// Read here http://www.browsersync.io/docs/options/
+		proxy: url,
 
-				// Tunnel the Browsersync server through a random Public URL
-				// tunnel: true,
+		// port: 8080,
 
-				// Attempt to use the URL "http://my-private-site.localtunnel.me"
-				// tunnel: "neat",
+		// Tunnel the Browsersync server through a random Public URL
+		// tunnel: true,
 
-				// Inject CSS changes
-				injectChanges: true
+		// Attempt to use the URL "http://my-private-site.localtunnel.me"
+		// tunnel: "ppress",
+
+		// Inject CSS changes
+		injectChanges: true
+
 	});
 });
+
 
 
 /**
