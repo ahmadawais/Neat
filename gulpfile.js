@@ -9,16 +9,22 @@
 
 
 // Project configuration
-var project 	= 'neat', // Project name, used for build zip.
-	url 		= 'neat.dev', // Local Development URL for BrowserSync. Change as-needed.
-	bower 		= './assets/bower_components/'; // Not truly using this yet, more or less playing right now. TO-DO Place in Dev branch
-	build 		= './buildtheme/', // Files that you want to package into a zip go here
-	buildInclude = [
+var project 		= 'neat', // Project name, used for build zip.
+	url 			= 'neat.dev', // Local Development URL for BrowserSync. Change as-needed.
+	bower 			= './assets/bower_components/'; // Not truly using this yet, more or less playing right now. TO-DO Place in Dev branch
+	build 			= './buildtheme/', // Files that you want to package into a zip go here
+	buildInclude 	= [
 						// include common file types
 						'**/*.php',
 						'**/*.html',
 						'**/*.css',
 						'**/*.js',
+						'**/*.svg',
+						'**/*.ttf',
+						'**/*.otf',
+						'**/*.eot',
+						'**/*.woff',
+						'**/*.woff2',
 
 						// include specific files and folders
 						'screenshot.png',
@@ -61,16 +67,28 @@ var project 	= 'neat', // Project name, used for build zip.
 /**
  * Browser Sync
  *
- * The 'cherry on top!' Asynchronous browser syncing of assets across multiple devices!! Watches for changes to js, image and php files
+ * Asynchronous browser syncing of assets across multiple devices!! Watches for changes to js, image and php files
  * Although, I think this is redundant, since we have a watch task that does this already.
 */
 gulp.task('browser-sync', function() {
 	var files = [
 					'**/*.php',
-					'**/*.{png,jpg,gif}'
+					'**/*.{png,jpg,gif,svg}'
 				];
 	browserSync.init(files, {
-		proxy: url
+				// Read here http://www.browsersync.io/docs/options/
+				proxy: url,
+
+				// port: 8080,
+
+				// Tunnel the Browsersync server through a random Public URL
+				// tunnel: true,
+
+				// Attempt to use the URL "http://my-private-site.localtunnel.me"
+				// tunnel: "neat",
+
+				// Inject CSS changes
+				injectChanges: true
 	});
 });
 
