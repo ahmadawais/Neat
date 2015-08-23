@@ -258,13 +258,6 @@ gulp.task('buildImages', function() {
  });
 
 
-gulp.task('delBuild', function(){
-
-	return 	gulp.src([build+'/**/', project+'.zip'])
-				.pipe(rimraf({ force: true }))
-		 		.pipe(notify({ message: 'Zip and build folder deleted', onLast: true }));
-});
-
  // ==== TASKS ==== //
  /**
   * Gulp Default Task
