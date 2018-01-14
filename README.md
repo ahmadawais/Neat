@@ -1,4 +1,6 @@
 # Neat
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmadawais/Neat.svg)](https://greenkeeper.io/)
 Neat is an advanced WordPress Base theme which uses Gulp, Sass etc. with auto theme package builder.
 
 ![Neat](https://i.imgur.com/Db366oR.jpg)
